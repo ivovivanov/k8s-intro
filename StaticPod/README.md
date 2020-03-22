@@ -1,5 +1,6 @@
 # Static Pod
-This is a feature of the kubelet to run pods on ints own without having master(Api Server)
+This is a feature of the kubelet to run pods on its own without having master(Api Server)
+---
 Kubelet check a path for pod yaml manifest files and runs the pod also if they crash kubelet is trying to restar the pod
 Path to stati pod manifest files if configured in
 - kubelet.service (`--pod-manifest-path` option is used)
