@@ -12,7 +12,7 @@ If an Api Server recognize a Static Pod it creates a mirror of it in the etcd da
 Staic Pods are ignored by the Kube-Scheduler 
 
 ---
-Static pods are recognized when runing `kubectl get pods` by theur name - it always ends with the name of the node:
+Static pods are recognized when runing `kubectl get pods` by their name - it always ends with the name of the node:
 
 - podnname-master
 - podname-node01
