@@ -6,5 +6,5 @@ Path to stati pod manifest files if configured in
 - configuration file that is provided as a path in the kubelet.service (with `--config` option).
     use the `staticPodPath` record in this config file
 --- 
-If an Api Server recognize a Static Pod it creates a mirror of it in the etcd datastore
+If an Api Server recognize a Static Pod it creates a mirror of it in the etcd datastore.
 Staic Pods are ignored by the Kube-Scheduler 
