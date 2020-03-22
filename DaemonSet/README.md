@@ -16,3 +16,15 @@ get more verbose output of get command
 kubectl get daemonsets -o wide
 kubectl get daemonsets -o wide --all-namespaces
 ```
+describe a daemonset
+```
+kubectl describe daemonsets MyDaemonSetName
+```
+describe  a daemonset in a specific namespace (--all-namespaces cannot be used)
+```
+kubectl describe daemonsets MyDaemonSetName -n MyNamespaceName
+```
+deploy a daemonset from yaml manifest
+```
+kubectl create -f FluentD.yaml
+```
