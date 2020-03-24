@@ -11,8 +11,8 @@ minikube addons enable metrics-server
  - for fully-fledged environment clone from git and create deployment
 
 Get metrics:
-`kubectl top nodes` - metrics for nodes
-`kubectl top nodes` - metrics for pods
+ - `kubectl top nodes` - metrics for nodes
+ - `kubectl top nodes` - metrics for pods
 ---
 
 ## Logging
