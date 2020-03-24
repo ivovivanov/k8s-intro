@@ -4,11 +4,11 @@
 
 ## Metrics Server
 Get metrics from Pods and Nodes. It stores its data only in memmory. Thus no historical data will be available. It heavily relies on Kubelet's subcomponent - cAdvisor.
--  for minikube
+ -  for minikube
 ```
 minikube addons enable metrics-server
 ```
-- for fully-fledged environment clone from git and create deployment
+ - for fully-fledged environment clone from git and create deployment
 
 Get metrics:
 `kubectl top nodes` - metrics for nodes
