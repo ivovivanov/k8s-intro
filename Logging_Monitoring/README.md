@@ -1,4 +1,4 @@
-# Logging and Monitorign
+# Logging and Monitoring
 
 ---
 
