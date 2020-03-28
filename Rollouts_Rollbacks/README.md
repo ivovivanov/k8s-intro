@@ -26,15 +26,21 @@ kubectl describe deployment my-deployment
 ```
 ## Rolling Out
 
-Rollout with a new version of the deployment manifest file.
+Rollout with a new version of the deployment manifest file:
 ```
 kubectl create -f deployment-defenition.yml
 ```
-The set image can also be used but then the workign version is different compared to the one present in the deployment defenition manifest file.
+The set image command can also be used but then the workign version is different compared to the one present in the deployment defenition manifest file:
 ```
 kubectl set image deployment/my-deployment nginx=nginx:1.9.1
 ```
 K8S creates a new replicaset behind the scenes in order to have the desired number of the newer pods while destroyng the old pods from the current replicaset. This can be viewed with the folling command(while the upgrade is being triggered):
 ```
 kubectl get replicasets
+```
+## Rolling Back
+
+Rollout can always be reverted to a previous version(if this is neccessary) with the command:
+```
+kubectl rollout undo deployment/my-deployment
 ```
