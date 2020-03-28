@@ -36,6 +36,6 @@ spec:
   containers:
     - name: ubuntu-sleep
       image: ubuntu
-      command:["sleep"]
-      args:["10"]
+      command: ["sleep"]
+      args: ["10"]
 ```
