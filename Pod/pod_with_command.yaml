@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    pod-with-args: true
+spec:
+  containers:
+    - name: ubuntu-sleep
+      image: ubuntu
+      command:
+        sleep
+        100
+      
