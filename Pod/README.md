@@ -11,3 +11,31 @@ Pod can be created also with a pod definition file (pod manifest)
 ```
 kubectl create -f my-pod.yaml
 ```
+
+---
+In pod manmifest files command and args sections can be specified. They reflect specific fields in Dockefile.
+| Dockerfile  | Pod Definition |
+|-------------|:--------------:|
+|  ENTRYPOINT |    command     |
+|     CMD     |     args       |
+
+
+Dockerfile
+```
+FROM ubuntu
+ENTRYPOINT ["sleep"]
+CMD ["10"]
+```
+These parameters can be passed also via the pod definition:
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+spec:
+  containers:
+    - name: ubuntu-sleep
+      image: ubuntu
+      command:["sleep"]
+      args:["10"]
+```
