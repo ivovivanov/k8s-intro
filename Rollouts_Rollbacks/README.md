@@ -1,5 +1,4 @@
 # Rollouts
----
 # Rollouts and Deployments
 When you deployment is created it triggers a rollout. When new rollout is triggered it creates a new deployment revision. This also enables users to be able to rollback to a previous revision(version of the deployment) if neccessary.
 
@@ -14,10 +13,10 @@ kubectl rollout history deplpoyment/my-deployment
 ---
 ## Deployment Strategies
 
-### Recreate Strategy
+### ***Recreate Strategy***
 This is not the default deployment strategy. When recreate strategy is used all the pods are destroyed and afterwards newer version pods are created. This causes application downtime.
 
-### Rolling Update
+### ***Rolling Update***
 This is the default deployment strategy. When Rolling Updatestrategy is used older pods are destroyed one by one while newer version pods are created one be one. When an old pod is destroyed an instance of the newer ones is created and then it starts to destroy the next of the older pods.
 
 ---
@@ -39,4 +38,3 @@ K8S creates a new replicaset behind the scenes in order to have the desired numb
 ```
 kubectl get replicasets
 ```
-
