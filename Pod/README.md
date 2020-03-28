@@ -39,3 +39,25 @@ spec:
       command: ["sleep"]
       args: ["10"]
 ```
+
+---
+Environment variables can be set via the pod definition under the containers section:
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-webapp
+spec:
+  containers:
+    - name: flask-webapp
+      image: flask
+      env:
+        - name: debug
+          value: true
+        - name:
+          valueFrom:
+            secretKeyRef:
+              name: mysecret:
+              key: username
+```
+* Instead using `value` environment variable can be set also with `valueFrom` to get the value from ConfigMap or Secret:
