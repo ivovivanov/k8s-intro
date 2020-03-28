@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    pod-with-args: true
+spec:
+  containers:
+    - name: ubuntu-sleep
+      image: ubuntu
+      command: ["sleep"] # This corresponds to ENTRYPOINT in Dockerfile
+      args: ["10"] # This corresponds to CMD in Dockerfile
