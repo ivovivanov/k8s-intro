@@ -57,7 +57,12 @@ spec:
         - name:
           valueFrom:
             secretKeyRef:
-              name: mysecret:
+              name: mysecret
               key: username
+        - name:
+          valueFrom:
+            configMapKeyRef:
+              name: flask-config
+              key: flask-option-1
 ```
 * Instead using `value` environment variable can be set also with `valueFrom` to get the value from ConfigMap or Secret:
