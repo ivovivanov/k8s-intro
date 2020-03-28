@@ -17,7 +17,7 @@ kubectl rollout history deplpoyment/my-deployment
 This is not the default deployment strategy. When recreate strategy is used all the pods are destroyed and afterwards newer version pods are created. This causes application downtime.
 
 ### ***Rolling Update***
-This is the default deployment strategy. When Rolling Updatestrategy is used older pods are destroyed one by one while newer version pods are created one be one. When an old pod is destroyed an instance of the newer ones is created and then it starts to destroy the next of the older pods.
+This is the default deployment strategy. When Rolling Updatestrategy is used older pods are destroyed one by one while newer version pods are created one be one. When an old pod is destroyed an instance of the newer ones is created and then it starts to destroy the next of the older pods. Number of pods to be created/dstroyed at a time can be configured so it may not be always one by one.
 
 ---
 In the Events section of the output of the describe command it is clearly shown which deployment strategy is being used. If all the pods are first destroyed and after that the newer pods are being creted then this indicates a Recreate Deployment strategy and not Rolling Update strategy.
