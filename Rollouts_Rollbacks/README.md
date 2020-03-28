@@ -40,7 +40,11 @@ kubectl get replicasets
 ```
 ## Rolling Back
 
-Rollout can always be reverted to a previous version(if this is neccessary) with the command:
+Rollout can always be reverted to the previous version(if this is neccessary) with the command:
 ```
 kubectl rollout undo deployment/my-deployment
+```
+or to a specified revision:
+```
+kubectl rollout undo deployment/my-deployment --to-revision=2
 ```
