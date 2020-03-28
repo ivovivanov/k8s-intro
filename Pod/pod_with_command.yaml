@@ -9,6 +9,5 @@ spec:
     - name: ubuntu-sleep
       image: ubuntu
       command:
-        sleep
-        100
-      
+        - sleep
+        - "100"
