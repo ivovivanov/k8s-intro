@@ -1,5 +1,5 @@
 # ConfigMaps
-ConfigMap is a way to set environment variable. This cna be done also with `env` property in the containers section in pod defenition files
+ConfigMap is a way to set environment variable. This can be done also with `env` property in the containers section in pod defenition files
 example setting two environment variables:
 ```yaml
 env:
@@ -47,7 +47,7 @@ kubectl create configmap my-config-map --from_file=my-app.config
 ```
 
 ### Declarative
-Create ConfigMap with defenetion file
+Create ConfigMap with defenition file
 ```
 kubectl create -f config-map.yaml
 ```
