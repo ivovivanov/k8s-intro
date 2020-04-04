@@ -38,7 +38,7 @@ kubectl describe configmap my-config-map
 Create ConfigMap with kubectl command
  - with literals
 ```
-kubectl create configmap my-config-map --fromliteral=DB_PORT:3306 --fromliteral=DEBUG_LEVEL=info
+kubectl create configmap my-config-map --from-literal=DB_PORT:3306 --from-literal=DEBUG_LEVEL=info
 ```
  - from file
 ```
