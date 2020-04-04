@@ -1,5 +1,5 @@
 # ConfigMaps
-ConfigMap is a way to set environment variable. This can be done also with `env` property in the containers section in pod defenition files
+ConfigMap is a way to set environment variable. This can be done also with `env` property in a container section in pod defenition files
 example setting two environment variables:
 ```yaml
 env:
