@@ -1,6 +1,6 @@
 # Secrets
 Secret is a way to set environment variable and/or sensitive data. Secrets are not encrypted but rather BASE64 encoded. 
-Under the same `env` property environment variables can be set with ConfigMaps
+The `env` property in a container section 
 ```yaml
 env:
   - name: DB_PORT
