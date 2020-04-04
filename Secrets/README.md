@@ -32,11 +32,11 @@ kubectl describe secret my-secret
 Create secret with kubectl command
  - with literals
 ```
-kubectl create secret my-secret --from-literal=username:ivo --from-literal=password=Th1sp@$$
+kubectl create secret generic my-secret --from-literal=username:ivo --from-literal=password=Th1sp@$$
 ```
  - from file
 ```
-kubectl create secret my-secret-map --from_file=my-secrets.config
+kubectl create secret generic my-secret --from_file=my-secrets.config
 ```
 
 ### Declarative
