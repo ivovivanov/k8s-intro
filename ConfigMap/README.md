@@ -21,7 +21,7 @@ env:
 or
 ```yaml
 envFrom:
-  - configMapKeyRef:
+  - configMapRef:
       name: my-config-map
 ```
 ## Working with ConfigMaps
